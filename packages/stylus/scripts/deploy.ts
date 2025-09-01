@@ -36,6 +36,12 @@ export default async function deployScript(deployOptions: DeployOptions) {
     ...deployOptions,
   });
 
+  await deployStylusContract({
+    contract: "portfolio-reader",
+    constructorArgs: [config.deployerAddress!],
+    ...deployOptions,
+  });
+
   // EXAMPLE: Deploy to Orbit Chains, uncomment to try
   // await deployStylusContract({
   //   contract: "counter",
