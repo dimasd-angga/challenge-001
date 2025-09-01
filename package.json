@@ -26,7 +26,7 @@
     "test": "yarn stylus:test",
     "info:networks": "yarn workspace @ss/stylus info:networks",
     "format": "yarn next:format",
-    "start": "yarn workspace @ss/nextjs dev",
+    "start": "node init && yarn workspace @ss/nextjs dev",
     "next:lint": "yarn workspace @ss/nextjs lint",
     "next:format": "yarn workspace @ss/nextjs format",
     "next:check-types": "yarn workspace @ss/nextjs check-types",
